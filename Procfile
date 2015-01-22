@@ -1,1 +1,1 @@
-web: bundle exec helloworld -p $PORT -c ./helloworld.rb
+web: bundle exec ruby helloworld.rb -p $PORT 
