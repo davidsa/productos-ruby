@@ -1,7 +1,6 @@
 # A sample Gemfile
 source "https://rubygems.org"
 gem "sinatra"
-gem "sinatra"
-gem "sinatra/json"
-gem "sinatra/cross_origin"
+gem 'sinatra-contrib'
+gem "sinatra-cross_origin", "~> 0.3.1"
 # gem "rails"
