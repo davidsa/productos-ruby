@@ -10,3 +10,7 @@ get '/' do
 	json :foo => 'bar'
 end
 
+get '/:var' do
+	params[:var]
+end
+
