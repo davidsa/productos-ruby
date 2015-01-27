@@ -11,6 +11,6 @@ get '/' do
 end
 
 get '/:var' do
-	json :data => params[:var]
+	json :foo => params[:var]
 end
 
