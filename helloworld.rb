@@ -11,6 +11,6 @@ get '/' do
 end
 
 get '/:var' do
-	params[:var]
+	json params[:var]
 end
 
