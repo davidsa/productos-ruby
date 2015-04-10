@@ -11,6 +11,15 @@ get '/' do
 end
 
 get '/:var' do
-	json :foo => params[:var]
+	par = params[:var]
+	if par == "leche"
+		json ["Entera","Pasteurizada","Baja en grasa"]
+	elsif par == "agua"
+		json ["Con gas", "Sin gas"]
+	elsif par == "carne"
+		json ["Res","Pescado","Pollo"]
+	elsif par == "queso"
+		json ["Gouda","Holandes","Azul"]
+	end
 end
 
