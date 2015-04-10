@@ -7,7 +7,8 @@ configure do
 end
 
 get '/' do
-	json :productos => ["leche","agua","carne","queso"]
+	json ["leche","agua","carne","queso"]
+end
 
 get '/:var' do
 	json :foo => params[:var]
